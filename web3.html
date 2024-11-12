@@ -24,13 +24,13 @@
         h1 {
             margin-bottom: 30px;
             font-size: 48px;
-            letter-spacing: 1px; /* More space between letters */
+            letter-spacing: 1px;
         }
         .button-container {
             display: flex;
-            flex-wrap: wrap; /* Allow buttons to wrap */
-            justify-content: center; /* Center the buttons */
-            gap: 20px; /* Space between buttons */
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
             max-width: 900px;
             margin-bottom: 40px;
         }
@@ -45,11 +45,11 @@
             text-decoration: none;
             transition: transform 0.3s, box-shadow 0.3s;
             flex: 1;
-            min-width: 150px; /* Minimum width for buttons */
+            min-width: 150px;
             text-align: center;
         }
         .button:hover {
-            transform: translateY(-3px); /* Lift effect on hover */
+            transform: translateY(-3px);
             box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
         }
         .small-button-container {
@@ -69,7 +69,7 @@
             transition: transform 0.3s, box-shadow 0.3s;
         }
         .small-button:hover {
-            transform: translateY(-2px); /* Lift effect on hover */
+            transform: translateY(-2px);
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
         }
         @media (max-width: 600px) {
@@ -78,6 +78,7 @@
             }
             .button {
                 font-size: 18px; /* Smaller font size for buttons */
+                padding: 12px 20px; /* Adjust padding for smaller buttons */
             }
             .small-button {
                 font-size: 16px; /* Smaller font size for small buttons */
