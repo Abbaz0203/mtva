@@ -24,20 +24,20 @@
         h1 {
             margin-bottom: 30px;
             font-size: 48px;
-            letter-spacing: 1px; /* More space between letters */
+            letter-spacing: 1px;
         }
         .button-container {
             display: flex;
             flex-wrap: wrap; /* Allow buttons to wrap */
             justify-content: center; /* Center the buttons */
-            gap: 15px; /* Space between buttons */
-            max-width: 900px;
+            gap: 10px; /* Reduced space between buttons */
+            max-width: 90%; /* Ensure it doesn't exceed screen width */
             margin-bottom: 40px;
             padding: 0 10px; /* Horizontal padding */
         }
         .button {
-            padding: 12px 20px; /* Adjust padding for better fit */
-            font-size: 20px; /* Adjust font size */
+            padding: 12px 16px; /* Adjusted padding for better fit */
+            font-size: 18px; /* Adjusted font size for smaller screens */
             color: white;
             background: linear-gradient(90deg, rgba(0, 123, 255, 0.8), rgba(0, 123, 255, 0.5));
             border: none;
@@ -45,8 +45,9 @@
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
             text-decoration: none;
             transition: transform 0.3s, box-shadow 0.3s;
-            flex: 1 1 150px; /* Allow buttons to grow and shrink */
+            flex: 1 1 120px; /* Allow buttons to grow and shrink */
             text-align: center;
+            min-width: 100px; /* Minimum width for buttons */
         }
         .button:hover {
             transform: translateY(-3px); /* Lift effect on hover */
@@ -58,8 +59,8 @@
             margin-top: 20px;
         }
         .small-button {
-            padding: 12px 25px;
-            font-size: 18px;
+            padding: 10px 20px;
+            font-size: 16px;
             color: white;
             background: linear-gradient(90deg, rgba(0, 123, 255, 0.8), rgba(0, 123, 255, 0.5));
             border: none;
@@ -81,7 +82,7 @@
                 padding: 10px; /* Adjust padding for smaller buttons */
             }
             .small-button {
-                font-size: 16px; /* Smaller font size for small buttons */
+                font-size: 14px; /* Smaller font size for small buttons */
             }
         }
     </style>
